@@ -1,0 +1,8 @@
+- `win+e`进入文件管理器
+- `win+R`进入运行，cmd指令进入命令行
+- ![image.png|500](https://picgo--ob.oss-cn-beijing.aliyuncs.com/20250809181358973.png)
+- 注意命令间的空格
+- `tab`联想关联
+- 打开程序直接输入 `exe`文件名即可，注意进入到目标目录下或者配置环境变量
+- `javac 文件名`进行编译
+- `java 不带后缀的文件名`运行
