@@ -1,4 +1,4 @@
-- `win+e`进入文件管理器
+- ==`win+e`==进入文件管理器
 - `win+R`进入运行，cmd指令进入命令行
 - ![image.png|500](https://picgo--ob.oss-cn-beijing.aliyuncs.com/20250809181358973.png)
 - 注意命令间的空格
