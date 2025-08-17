@@ -11,7 +11,7 @@ public class ScannerDemo{
 
         //声明变量接受键盘录入
         int i = scan.nextInt();
-        i +=scan.nextInt();
+        i += scan.nextInt();
         System.out.print("你输入的两个数字和是：");
         System.out.print(i);
     }
