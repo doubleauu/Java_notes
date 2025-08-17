@@ -1,4 +1,4 @@
-非常好的问题！这个问题触及了Java==**反射**==（Reflection）机制的核心。
+ 非常好的问题！这个问题触及了Java==**反射**==（Reflection）机制的核心。
 
 `getClass()` 函数本身返回的类型是 **`java.lang.Class`**。
 

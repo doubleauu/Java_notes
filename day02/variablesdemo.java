@@ -3,10 +3,10 @@ package day02;
 
 public class variablesdemo {
 
-    double pi = 3.14; //成员变量，全局变量
+    double pi = 3.14; //成员变量(实例变量)，属于类的实例(对象)
 
-    public static final double PI = 3.14; //静态常量
-    final int num0 = 1024; //成员常量
+    public static final double PI = 3.14; //静态常量，属于类本身
+    final int num0 = 1024; //成员常量，final修饰表示不可修改
 
     public static void main(String[] args){
         //变量的重新赋值
@@ -18,13 +18,14 @@ public class variablesdemo {
 
         //其他类型变量
         float score = 89.0F;
-        double score1 = 88.0D;
+        double score1 = 88.0;  //不需要后缀d，默认double类型；
         int age = 26;
         System.out.println("---");
 
 
         //堆上的引用数据类型String
         String name = new String("Descartes");
+        String nameDemo = name.intern(); //将Descartes注入常量池，返回其引用给nameDemo，name还是在堆上；
         System.out.println(name);
         System.out.println("---");
 
@@ -32,11 +33,11 @@ public class variablesdemo {
         //类型转换
         int a = 110;
         double b = 113.9D;
-        b = a;
-        a = (int)b;
+        b = a;       //隐式转换，只支持高精度到低精度
+        a = (int)b;  //显示转换，可能丢失精度
         System.out.println(a);
         System.out.println(b);
-        System.out.println("---");
+        System.out.println("---");          //a = 110, b = 110.0
 
 
         //其他类型到字符串类型的转换方法一
@@ -66,7 +67,7 @@ public class variablesdemo {
         double num2 = Double.parseDouble(str2);
 
         //字符串转换为其他类型方法二
-        int num3 = Integer.valueOf(str1).intValue();
+        int num3 = Integer.valueOf(str1).intValue();  //现代Java自动拆箱
         double num4 =Double.valueOf(str2).doubleValue();
 
         //局部变量的作用域，即代码块内定义的变量

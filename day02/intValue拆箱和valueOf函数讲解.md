@@ -19,7 +19,7 @@ int num3 = Integer.valueOf(str1).intValue();
 #### **第 1 步: `Integer.valueOf(str1)`**
 
 *   **`Integer`**: 这是Java中的一个**包装类（Wrapper Class）**。Java有8种基本数据类型（如 `int`, `double`），它们本身不是对象。为了能在需要对象的地方（比如在 `ArrayList` 这样的集合中）使用这些值，Java为每种基本类型都提供了一个对应的包装类（`int` 对应 `Integer`，`double` 对应 `Double` 等）。
-*   **`.valueOf(str1)`**: 这是 `Integer` 类的一个**静态方法**。它的作用是接收一个字符串（这里是 `str1`），并把它**解析（Parse）**成一个 `Integer` **对象**。
+*   **`.valueOf(str1)`**: 这是 `Integer` 类的一个**静态方法**。它的作用是接收一个字符串（这里是 `str1`），并把它**==**解析（Parse）**==**成一个 `Integer` **对象**。
 
 **假设 `str1` 的值是 `"110"`。**
 执行完 `Integer.valueOf("110")` 后，你得到的不是一个简单的数字 `110`，而是一个在内存中代表 `110` 的 `Integer` **对象**。
