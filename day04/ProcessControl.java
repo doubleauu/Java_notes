@@ -255,7 +255,7 @@ public class ProcessControl {
  * 1.  **Scanner 输入**：
  *     - `Scanner scanner = new Scanner(System.in);` 是获取键盘输入的标准写法。
  *     - `scanner.nextInt()` 读取整数，`scanner.nextDouble()` 读取浮点数，`scanner.next()` 读取不含空格的字符串，`scanner.nextLine()` 读取一整行。
- *     - 使用完 `Scanner` 后，最好用 `scanner.close()` 关闭它以释放资源。
+ *     - 使用完 `Scanner` 后，最好用 `scanner.close()` 关闭它以释放资源。其实不用也行，jvm会释放内存
  *
  * 2.  **输出方式**：
  *     - `System.out.println()`：最常用，输出后会自动换行。
