@@ -6,7 +6,7 @@ public class operatordemo{
         //自减同理
         int a = 10;
         int b = a++;
-        int c = ++a;
+        int c = ++a;  //赋值运算符总是在右侧表达式计算完成后才执行。即 等号的优先级最低
 
         //三元条件运算符
         int result = b > c? b : c;
