@@ -7,7 +7,8 @@ import java.util.Scanner;
 
 因此，我们可以直接使用`Math.sqrt()`这样的静态方法，而不需要额外的导入语句。
 
----好的，非常乐意为您详细讲解Java中最核心、最基础的包——`java.lang`。
+---
+好的，非常乐意为您详细讲解Java中最核心、最基础的包——`java.lang`。
 
 您之前问的 `Object` 类，就是这个包里最重要的成员之一。现在我们把视野扩大，看看整个 `java.lang` 家族。
 
@@ -67,13 +68,13 @@ Java有8种基本数据类型（`int`, `double`, `boolean` 等），它们不是
 
 #### 4. 系统与运行时交互：`System`, `Runtime`, `Process`
 
-*   **`System`**: 提供了访问标准输入/输出/错误流（`System.in`, `System.out`, `System.err`）、获取系统属性（`System.getProperty("java.version")`）和环境变量、以及执行垃圾回收（`System.gc()`）等底层功能。
+*   **`System`**: **提供了访问标准输入/输出/错误流**（`System.in`, `System.out`, `System.err`）、获取系统属性（`System.getProperty("java.version")`）和环境变量、以及执行垃圾回收（`System.gc()`）等底层功能。
 *   **`Runtime`**: 让程序可以和它所运行的Java虚拟机（JVM）环境进行交互。例如，可以获取可用内存（`Runtime.getRuntime().freeMemory()`）、执行外部命令（`Runtime.getRuntime().exec("notepad.exe")`）等。
 *   **`Process`** 和 **`ProcessBuilder`**: 用于创建和管理操作系统级别的进程。
 
 #### 5. 数学计算工具箱：`Math` 和 `StrictMath`
 
-*   **`Math`**: 包含了一系列用于执行基本数学运算的**静态方法**，如三角函数 (`Math.sin()`)、指数对数 (`Math.log()`)、取整 (`Math.round()`)、最大/最小值 (`Math.max()`)、随机数 (`Math.random()`) 等。你无需创建 `Math` 对象，直接通过类名调用即可。
+*   **`Math`**: 包含了一系列用于执行基本数学运算的==**静态方法**==%%可以直接通过类名调用%%，如三角函数 (`Math.sin()`)、指数对数 (`Math.log()`)、取整 (`Math.round()`)、最大/最小值 (`Math.max()`)、随机数 (`Math.random()`) 等。你无需创建 `Math` 对象，直接通过类名调用即可。
 *   **`StrictMath`**: 与 `Math` 类似，但它保证在所有Java平台上执行的结果都完全一样，用于需要绝对可复现性的科学计算。
 
 #### 6. 错误与异常的顶层设计：`Throwable` 家族
