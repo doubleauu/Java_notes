@@ -90,7 +90,7 @@ public class ArrayDemo {
         String[] arr = new String[]{"村雨遥", "海贼王", "进击的巨人", "鬼灭之刃", "斗罗大陆"};  //静态初始化
         System.out.printf("排序前：%s\n", Arrays.toString(arr));
         //标准库排序
-        Arrays.sort(arr);
+        Arrays.sort(arr);                                                                    //升序
         System.out.printf("排序后：%s\n", Arrays.toString(arr));
     }
 }

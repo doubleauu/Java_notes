@@ -1,6 +1,5 @@
-- 成员变量可以被同名的局部变量覆盖或者重写
-- 在声明这些静态成员变量时，只会为引用变量本身（例如 `arr1`）分配内存，并将其初始化为默认值 `null`。
-
+- 在方法中，成员变量可以被同名的局部变量覆盖或者重写
+- 在声明这些静态成员变量时，只会为引用变量本身（例如 `arr1`）分配内存，并将其初始化为默认值 `null`。存储在**方法区**（类的元数据区），而不是堆上
 - 此时并不会为数组对象（即数组的内容）分配内存。数组对象本身是在 `arrayInit` 方法中通过 `new` 关键字显式创建时才在堆内存中进行分配的。
 - ---
 
@@ -48,7 +47,7 @@ public class Student {
     // 静态（类）变量：所有学生对象共享这一份
     static int totalStudentCount = 0;
 
-    public Student(String name) {
+    public Student(String name) {  //构造函数
         this.name = name;
         totalStudentCount++; // 每创建一个新学生，总人数就加1
     }
@@ -98,38 +97,6 @@ double maxValue = Math.max(10.5, 20.8);
 double randomValue = Math.random();
 
 System.out.println("最大值是: " + maxValue);
-```
-
-**自定义工具类示例：**
-
-```java
-public class ArrayUtils {
-    // 这是一个静态方法，属于 ArrayUtils 类
-    // 它的功能是打印一个整数数组，这个功能不依赖于任何具体对象
-    public static void printArray(int[] arr) {
-        if (arr == null) {
-            System.out.println("null");
-            return;
-        }
-        System.out.print("[");
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i]);
-            if (i < arr.length - 1) {
-                System.out.print(", ");
-            }
-        }
-        System.out.println("]");
-    }
-}
-
-// 在其他地方使用
-public class Main {
-    public static void main(String[] args) {
-        int[] myScores = {98, 85, 100};
-        // 直接用类名调用静态工具方法
-        ArrayUtils.printArray(myScores); // 输出: [98, 85, 100]
-    }
-}
 ```
 
 ---
